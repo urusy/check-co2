@@ -1,7 +1,7 @@
 cachetools==4.1.1
 certifi==2020.6.20
-cffi==1.14.2
 chardet==3.0.4
+getrpimodel==0.1.16
 google-api-core==1.22.1
 google-auth==1.21.0
 google-cloud-bigquery==1.27.2
@@ -10,12 +10,16 @@ google-crc32c==1.0.0
 google-resumable-media==1.0.0
 googleapis-common-protos==1.52.0
 idna==2.10
+mh-z19==0.6.3
+pkg-resources==0.0.0
 protobuf==3.13.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.20
+pyserial==3.4
 pytz==2020.1
 requests==2.24.0
 rsa==4.6
 six==1.15.0
+slackweb==1.0.5
 urllib3==1.25.10

@@ -8,7 +8,7 @@ project = "urusy-1"
 dataset = "co2"
 table = "mh_z19"
 
-const CO2_THRESHOLD = 700
+CO2_THRESHOLD = 700
 
 sensor_data = mh_z19.read_all()
 
@@ -32,7 +32,7 @@ with open(latest_file_name) as latest_file_r:
 if co2 >= CO2_THRESHOLD and co2_latest < CO2_THRESHOLD:
     # fire
     slack = slackweb.Slack(url=slack_url)
-    slack.notify(text='Carbon dioxide concentration has exceeded the standard value. : ' + co2 + ' ppm\nhttps://datastudio.google.com/u/0/reporting/64e830d0-97f4-43c2-b239-ded45d657b12/page/98meB')
+    slack.notify(text='Carbon dioxide concentration has exceeded the standard value. : ' + str(co2) + ' ppm\nhttps://datastudio.google.com/u/0/reporting/64e830d0-97f4-43c2-b239-ded45d657b12/page/98meB')
 
 with open(latest_file_name, mode='w') as latest_file_w:
-    latest_file_w.write(co2)
+    latest_file_w.write(str(co2))

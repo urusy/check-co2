@@ -1,0 +1,8 @@
+{
+    "slack": {
+	"url": "[slack incoming webhook url]"
+    },
+    "files": {
+	"latest": "co2_latest.txt"
+    }
+}

@@ -2,3 +2,5 @@ venv/
 cron.log
 google_application_credentials.json
 
+# JetBrains
+.idea

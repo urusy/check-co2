@@ -8,7 +8,7 @@ project = "urusy-1"
 dataset = "co2"
 table = "mh_z19"
 
-CO2_THRESHOLD = 700
+CO2_THRESHOLD = 900
 
 sensor_data = mh_z19.read_all()
 
